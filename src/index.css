@@ -5,26 +5,34 @@ body {
   font-family: sans-serif;
 }
 
+.logo Text {
+  font: bold 30px;
+  font-family: "Rokkitt";
+}
+
 nav {
   background-color: #111;
   padding: 0;
 }
-nav > div {
-  display: inline;
-  list-style-type: none;
+nav ul {
+  padding: 0;
   margin: 0;
 }
-nav > div > a {
+nav ul li {
+  display: inline;
+  list-style-type: none;
+}
+nav ul li > a {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
   display: inline-block;
 }
-nav > div > a.active {
+nav ul li > a.active {
   background-color: #004c7f;
 }
-nav > div > a:hover {
+nav ul li > a:hover {
   background-color: #0099ff;
 }
 
