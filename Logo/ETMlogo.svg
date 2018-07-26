@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80">
-    <style>
-        .heavy { font: bold 30px; font-family: &quot;Rokkitt&quot;; }
-    </style>
-    <text x="40" y="35" class="heavy">
-        ETM
-    </text>
-</svg>

@@ -8,7 +8,7 @@ export default class Main extends Component {
   public render() {
     return (
       <div>
-        <h1 className="heavy">ETM Construction</h1>
+        <img src="/ETMlogo.svg" width="500" />
         <nav>
           <ul>
             <li>
@@ -32,20 +32,4 @@ export default class Main extends Component {
       </div>
     );
   }
-}
-
-{
-  /* <svg viewBox="0 0 240 80" className="logo">
-  <text x="0" y="10">
-    ETM
-  </text>
-  <rect
-    x="21.1"
-    y=".9"
-    width="7.2"
-    height="8.1"
-    fill="white"
-    fillOpacity="0.4"
-  />
-</svg>; */
 }
