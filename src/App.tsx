@@ -46,7 +46,11 @@ export default () => {
           component={page.component}
         />
       ))}
-      <footer>ETM Construction LLC.</footer>
+      <footer>
+        <div>ETM Construction LLC</div>
+        <div>11 Steepletop Road Rowayton, CT 06853</div>
+        <div>(203) 838-7727</div>
+      </footer>
     </div>
   );
 };
