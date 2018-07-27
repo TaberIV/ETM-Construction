@@ -30,6 +30,11 @@ nav a:hover {
   background-color: #0099ff;
 }
 
+.spacer {
+  background-color: #111;
+  height: 0px;
+}
+
 .mainImage {
   width: 100%;
   object-fit: cover;
@@ -65,11 +70,15 @@ footer {
       flex-direction: column;
     }
     header .logo img {
-      height: 200px;
+      height: 180px;
+      padding: 10px;
     }
     header nav {
       flex-direction: column;
-      height: 100%;
+    }
+
+    header .spacer {
+      flex: 1;
     }
 
     .mainImage {
@@ -92,7 +101,7 @@ footer {
       display: grid;
       height: 100vh;
       grid-template-columns: minmax(max-content, 1fr) 4fr;
-      grid-template-rows: minmax(200px, 500px) auto auto;
+      grid-template-rows: minmax(200px, 500px) auto max-content;
       grid-column-gap: 0em;
       grid-template-areas:
         "header mainImage"

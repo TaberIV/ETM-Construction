@@ -36,6 +36,7 @@ export default () => {
             </NavLink>
           ))}
         </nav>
+        <div className="spacer" />
       </header>
       {pages.map(page => (
         <Route
