@@ -1,35 +1,51 @@
-import React, { Component } from "react";
+import React from "react";
 import { NavLink, Route } from "react-router-dom";
+import AboutUs from "./pages/AboutUs";
+import Contact from "./pages/Contact";
 import Home from "./pages/Home";
-import Houses from "./pages/Houses";
-import Logo from "./pages/Logo";
+import Photos from "./pages/Photos";
+import Testimonials from "./pages/Testimonials";
+import WhatWeDo from "./pages/WhatWeDo";
 
-export default class Main extends Component {
-  public render() {
-    return (
-      <div>
-        <img src="/ETMlogo.svg" width="500" />
-        <nav>
-          <ul>
-            <li>
-              <NavLink exact={true} to="/">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/houses">Houses</NavLink>
-            </li>
-            <li>
-              <NavLink to="/logo">Logo</NavLink>
-            </li>
-          </ul>
-        </nav>
-        <main>
-          <Route exact={true} path="/" component={Home} />
-          <Route path="/houses" component={Houses} />
-          <Route path="/logo" component={Logo} />
-        </main>
-      </div>
-    );
+export default () => {
+  interface IPageInfo {
+    component: React.StatelessComponent;
+    name: string;
+    path: string;
   }
-}
+
+  const pages: IPageInfo[] = [
+    { component: Home, name: "Home", path: "/" },
+    { component: AboutUs, name: "About Us", path: "/aboutUs" },
+    { component: WhatWeDo, name: "What We Do", path: "/whatWeDo" },
+    { component: Testimonials, name: "Testimonials", path: "/testimonials" },
+    { component: Photos, name: "Photos", path: "/photos" },
+    { component: Contact, name: "Contact", path: "/contact" }
+  ];
+
+  return (
+    <div className="site">
+      <header>
+        <NavLink className="logo" to="/">
+          <img src="/img/logo.svg" />
+        </NavLink>
+        <nav>
+          {pages.map(page => (
+            <NavLink exact={page.path === "/"} to={page.path}>
+              {page.name}
+            </NavLink>
+          ))}
+        </nav>
+      </header>
+      {pages.map(page => (
+        <Route
+          key={`${page.name}Route`}
+          exact={page.path === "/"}
+          path={page.path}
+          component={page.component}
+        />
+      ))}
+      <footer>ETM Construction LLC.</footer>
+    </div>
+  );
+};
