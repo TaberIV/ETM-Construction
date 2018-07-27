@@ -47,6 +47,7 @@ main {
 
 main p {
   text-indent: 1em;
+  font-size: 16pt;
 }
 
 footer {
