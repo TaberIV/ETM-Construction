@@ -15,6 +15,7 @@ header nav {
   background-color: #000;
 }
 header nav a {
+  font-size: 12pt;
   padding: 1em;
   text-align: center;
   color: #fff;
@@ -55,7 +56,19 @@ footer {
   padding: 1em;
 }
 
+/* Mobile + No Grid */
+@media not screen and (min-width: 800px) {
+  header nav {
+    flex-direction: column;
+  }
+
+  .mainImage {
+    height: 100%;
+  }
+}
+
 @supports (display: grid) {
+  /* Mobile + Grid */
   @media not screen and (min-width: 800px) {
     header nav {
       margin-top: 1em;
@@ -64,6 +77,7 @@ footer {
     }
   }
 
+  /* Desktop + grid */
   @media screen and (min-width: 800px) {
     header {
       grid-area: header;
@@ -76,6 +90,9 @@ footer {
     }
     header nav {
       flex-direction: column;
+    }
+    header nav a {
+      font-size: 12pt;
     }
 
     header .spacer {
