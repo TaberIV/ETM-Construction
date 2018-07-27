@@ -101,7 +101,7 @@ footer {
       display: grid;
       height: 100vh;
       grid-template-columns: minmax(max-content, 1fr) 4fr;
-      grid-template-rows: minmax(200px, 500px) auto max-content;
+      grid-template-rows: minmax(200px, auto) auto max-content;
       grid-column-gap: 0em;
       grid-template-areas:
         "header mainImage"
