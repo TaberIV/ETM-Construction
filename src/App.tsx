@@ -31,7 +31,11 @@ export default () => {
         </NavLink>
         <nav>
           {pages.map(page => (
-            <NavLink exact={page.path === "/"} to={page.path}>
+            <NavLink
+              key={`${page.name}NavLink`}
+              exact={page.path === "/"}
+              to={page.path}
+            >
               {page.name}
             </NavLink>
           ))}
@@ -47,9 +51,9 @@ export default () => {
         />
       ))}
       <footer>
-        <div>ETM Construction LLC</div>
-        <div>11 Steepletop Road Rowayton, CT 06853</div>
-        <div>(203) 838-7727</div>
+        <div className="LLC">ETM Construction LLC</div>
+        <div className="address">11 Steepletop Road Rowayton, CT 06853</div>
+        <div className="phone">(203) 838-7727</div>
       </footer>
     </div>
   );
