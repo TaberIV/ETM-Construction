@@ -70,56 +70,68 @@ footer {
   background-color: $sidebar-color;
   color: $background-color;
   font-size: 8pt;
-  text-align: center;
   padding: 1em;
 }
 
-/* Mobile */
-@media not screen and (min-width: 800px) {
-  header nav {
-    flex-direction: column;
+// * Mobile
+@media screen and (max-width: 800px) {
+  header {
+    .logo img {
+      // Todo Test logo size
+      height: 150px;
+      padding: $logo-padding;
+    }
+
+    nav {
+      flex-direction: column;
+    }
   }
 
   footer {
     flex-direction: column;
-  }
-  footer .phone {
-    order: -1;
-  }
-  footer .address {
-    order: 1;
+    align-items: center;
+    .phone {
+      order: -1;
+    }
+    .address {
+      order: 1;
+    }
   }
 
+  // Not exactly sure why this works
   .mainImage {
     height: 100%;
   }
 }
 
 @supports (display: grid) {
-  /* Mobile + Grid */
-  @media not screen and (min-width: 800px) {
+  // * Mobile + Grid
+  @media screen and (max-width: 800px) {
     header nav {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  /* Desktop + grid */
+  // * Desktop + grid
   @media screen and (min-width: 800px) {
+    // Todo Experiment with logo next to nav
     header {
       grid-area: header;
       display: flex;
       flex-direction: column;
-    }
-    header nav {
-      flex-direction: column;
-    }
-    header nav a {
-      font-size: 1.3em;
-    }
 
-    header .spacer {
-      flex: 1;
+      nav {
+        flex-direction: column;
+
+        a {
+          font-size: 1.3em;
+        }
+      }
+
+      .spacer {
+        flex: 1;
+      }
     }
 
     .mainImage {
