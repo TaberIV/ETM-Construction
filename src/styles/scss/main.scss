@@ -1,38 +1,51 @@
+$sidebar-color: #111;
+$background-color: #fff;
+$link-active-color: #004c7f;
+$link-hover-color: #0099ff;
+
+$top-bar-height: 250px;
+$logo-padding: 20px;
+
 body {
-  background-color: #fff;
+  background-color: $background-color;
   margin: 0;
   font-family: sans-serif;
 }
 
-header .logo img {
-  display: block;
-  margin: auto;
-  height: 10em;
-}
-header nav {
-  display: flex;
-  flex-direction: row;
-  background-color: #000;
-}
-header nav a {
-  font-size: 12pt;
-  padding: 1em;
-  text-align: center;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  flex: 1;
-}
-nav a.active {
-  background-color: #004c7f;
-}
-nav a:hover {
-  background-color: #0099ff;
-}
+header {
+  .logo img {
+    display: block;
+    margin: auto;
+    height: $top-bar-height - 2 * $logo-padding;
+    padding: $logo-padding;
+  }
 
-.spacer {
-  background-color: #000;
-  height: 0px;
+  nav {
+    display: flex;
+    flex-direction: row;
+    background-color: $sidebar-color;
+
+    a {
+      font-size: 1em;
+      padding: 1em;
+      text-align: center;
+      color: $background-color;
+      font-weight: bold;
+      text-decoration: none;
+      flex: 1;
+    }
+    a.active {
+      background-color: $link-active-color;
+    }
+    a:hover {
+      background-color: $link-hover-color;
+    }
+  }
+
+  .spacer {
+    background-color: $sidebar-color;
+    height: 0px;
+  }
 }
 
 .mainImage {
@@ -43,28 +56,38 @@ nav a:hover {
 
 main {
   padding: 1em;
-}
 
-main p {
-  text-indent: 1em;
-  font-size: 16pt;
+  p {
+    text-indent: 1em;
+    font-size: 1.5em;
+  }
 }
 
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #000;
-  color: #fff;
+  background-color: $sidebar-color;
+  color: $background-color;
   font-size: 8pt;
   text-align: center;
   padding: 1em;
 }
 
-/* Mobile + No Grid */
+/* Mobile */
 @media not screen and (min-width: 800px) {
   header nav {
     flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+  footer .phone {
+    order: -1;
+  }
+  footer .address {
+    order: 1;
   }
 
   .mainImage {
@@ -76,7 +99,6 @@ footer {
   /* Mobile + Grid */
   @media not screen and (min-width: 800px) {
     header nav {
-      margin-top: 1em;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
@@ -89,15 +111,11 @@ footer {
       display: flex;
       flex-direction: column;
     }
-    header .logo img {
-      height: 180px;
-      padding: 10px;
-    }
     header nav {
       flex-direction: column;
     }
     header nav a {
-      font-size: 12pt;
+      font-size: 1.3em;
     }
 
     header .spacer {
@@ -122,8 +140,8 @@ footer {
     .site {
       display: grid;
       height: 100vh;
-      grid-template-columns: minmax(max-content, 1fr) 4fr;
-      grid-template-rows: minmax(200px, 1fr) auto max-content;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: minmax($top-bar-height, 1fr) auto max-content;
       grid-column-gap: 0em;
       grid-template-areas:
         "header mainImage"
