@@ -60,7 +60,10 @@ header {
 
   h1 {
     color: $background-color;
-    font-size: 5em;
+    background-color: rgba($color: $sidebar-color, $alpha: 0.5);
+    font-size: 4em;
+    padding: 0.3em;
+    border-radius: 0.5em;
 
     position: absolute;
     top: 50%;
@@ -136,7 +139,6 @@ footer {
 
   // * Desktop + grid
   @media screen and (min-width: 800px) {
-    // Todo Experiment with logo next to nav
     header {
       grid-area: header;
       display: flex;
@@ -146,7 +148,7 @@ footer {
         flex-direction: column;
 
         a {
-          font-size: 1.3em;
+          font-size: 1.2em;
         }
       }
 
