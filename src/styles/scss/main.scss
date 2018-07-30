@@ -99,7 +99,6 @@ footer {
 @media screen and (max-width: 800px) {
   header {
     .logo img {
-      // Todo Test logo size
       height: 150px;
       padding: $logo-padding;
     }
@@ -182,6 +181,7 @@ footer {
     .site {
       display: grid;
       min-height: fit-content;
+      min-height: 650px;
       height: 100vh;
       grid-template-columns: auto 1fr;
       grid-template-rows: minmax($top-bar-height, 1fr) auto max-content;
