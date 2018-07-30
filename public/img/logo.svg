@@ -13,9 +13,9 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    width="22.459mm"
-   height="16.565001mm"
+   height="18.48mm"
    version="1.1"
-   viewBox="0 0 22.459 16.565001"
+   viewBox="0 0 22.459 18.48"
    inkscape:version="0.92.2 2405546, 2018-03-11"
    sodipodi:docname="logo.svg"
    inkscape:export-filename="/home/taber/Documents/ETM-Construction/Logo/ETMlogo.png"
@@ -40,9 +40,9 @@
      showborder="false"
      showgrid="false"
      showguides="false"
-     inkscape:current-layer="layer1"
-     inkscape:cx="43.990996"
-     inkscape:cy="33.580134"
+     inkscape:current-layer="layer3"
+     inkscape:cx="50.739298"
+     inkscape:cy="8.4849044"
      inkscape:document-units="mm"
      inkscape:guide-bbox="true"
      inkscape:pageopacity="0.0"
@@ -52,7 +52,7 @@
      inkscape:window-width="1920"
      inkscape:window-x="0"
      inkscape:window-y="29"
-     inkscape:zoom="12.049413"
+     inkscape:zoom="4.2076237"
      inkscape:measure-start="84.875,32.3059"
      inkscape:measure-end="81.4727,32.3059"
      inkscape:snap-grids="true"
@@ -129,7 +129,7 @@
                 </dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -137,7 +137,7 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="ETM"
-     transform="translate(0,-280.435)">
+     transform="translate(0,-278.52)">
     <g
        id="text12"
        aria-label="ETM"
@@ -188,7 +188,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="Tagline">
+     inkscape:label="Tagline"
+     transform="translate(0,1.9150123)">
     <g
        aria-label="Est. 1985 Rowayton, CT"
        transform="matrix(0.26458333,0,0,0.26458333,3.3767353e-8,-286.39775)"
@@ -204,7 +205,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Door">
+     inkscape:label="Door"
+     transform="translate(0,1.9150123)">
     <rect
        style="fill:none;stroke:#000000;stroke-width:0.03499166;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect923"
@@ -238,15 +240,16 @@
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="Windows">
+     inkscape:label="Windows"
+     transform="translate(0,1.9150123)">
     <g
        id="g1269"
        transform="translate(-8.9236208e-8,-285.4892)">
       <rect
          y="291.82599"
-         x="15.582532"
-         height="1.7528646"
-         width="1.5461588"
+         x="15.582531"
+         height="1.6308861"
+         width="1.546"
          id="rect935"
          style="fill:none;stroke:#000000;stroke-width:0.035;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <rect
@@ -293,7 +296,7 @@
          height="0.12197876"
          width="1.7983302"
          id="rect1260"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.035;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.035;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
     <use
        x="0"
@@ -307,7 +310,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer4"
-     inkscape:label="Roof">
+     inkscape:label="Roof"
+     transform="translate(0,1.9150123)">
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 22.45651,3.8119699 H 21.573877 L 11.244792,-1.2733592 0.87023115,3.8119699 H 3.5364304e-8 L 11.244792,-1.914657 Z"
