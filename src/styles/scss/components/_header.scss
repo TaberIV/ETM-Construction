@@ -1,0 +1,38 @@
+header {
+  .logo img {
+    display: block;
+    margin: auto;
+    height: $top-bar-height - 2 * $logo-padding;
+    padding: $logo-padding;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    background-color: $sidebar-color;
+
+    a {
+      flex: 1;
+
+      font-size: 1em;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      padding: 1em;
+
+      color: $background-color;
+
+      &.active {
+        background-color: $link-active-color;
+      }
+      &:hover {
+        background-color: $link-hover-color;
+      }
+    }
+  }
+
+  .spacer {
+    background-color: $sidebar-color;
+    height: 0px;
+  }
+}
