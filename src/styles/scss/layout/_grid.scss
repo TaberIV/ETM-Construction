@@ -6,6 +6,10 @@
       display: flex;
       flex-direction: column;
 
+      .logo img {
+        height: $top-bar-height - 2 * $logo-padding;
+      }
+
       nav {
         flex-direction: column;
 

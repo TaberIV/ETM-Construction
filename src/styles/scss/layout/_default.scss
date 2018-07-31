@@ -1,0 +1,16 @@
+header {
+  .logo img {
+    height: 200px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

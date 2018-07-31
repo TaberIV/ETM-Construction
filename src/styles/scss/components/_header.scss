@@ -2,13 +2,10 @@ header {
   .logo img {
     display: block;
     margin: auto;
-    height: $top-bar-height - 2 * $logo-padding;
     padding: $logo-padding;
   }
 
   nav {
-    display: flex;
-    flex-direction: row;
     background-color: $sidebar-color;
 
     a {
