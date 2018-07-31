@@ -13,9 +13,9 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    width="22.459mm"
-   height="18.48mm"
+   height="18.636999mm"
    version="1.1"
-   viewBox="0 0 22.459 18.48"
+   viewBox="0 0 22.459 18.637001"
    inkscape:version="0.92.2 2405546, 2018-03-11"
    sodipodi:docname="logoWhite.svg"
    inkscape:export-filename="/home/taber/Documents/ETM-Construction/Logo/ETMlogo.png"
@@ -39,10 +39,10 @@
      pagecolor="#ffffff"
      showborder="false"
      showgrid="false"
-     showguides="false"
-     inkscape:current-layer="layer3"
-     inkscape:cx="68.885594"
-     inkscape:cy="29.269571"
+     showguides="true"
+     inkscape:current-layer="layer2"
+     inkscape:cx="57.628177"
+     inkscape:cy="29.88058"
      inkscape:document-units="mm"
      inkscape:guide-bbox="true"
      inkscape:pageopacity="0.0"
@@ -52,7 +52,7 @@
      inkscape:window-width="1920"
      inkscape:window-x="0"
      inkscape:window-y="29"
-     inkscape:zoom="28.283656"
+     inkscape:zoom="16"
      inkscape:measure-start="84.875,32.3059"
      inkscape:measure-end="81.4727,32.3059"
      inkscape:snap-grids="true"
@@ -69,7 +69,7 @@
        id="guide903"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="16.370258,0"
+       position="11.736891,0.15785607"
        orientation="0,1"
        id="guide905"
        inkscape:locked="false" />
@@ -118,6 +118,11 @@
        orientation="1,0"
        id="guide1283"
        inkscape:locked="false" />
+    <sodipodi:guide
+       position="5.2345356,0.31957248"
+       orientation="0,1"
+       id="guide951"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -129,7 +134,7 @@
                 </dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -137,12 +142,12 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="ETM"
-     transform="translate(0,-278.52)">
+     transform="translate(0,-278.363)">
     <g
        id="text12"
        aria-label="ETM"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:0;font-family:'GeoSlb712 Md BT';-inkscape-font-specification:'GeoSlb712 Md BT';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       transform="translate(21.710744,188.89076)">
+       transform="translate(21.710744,188.73382)">
       <path
          id="path49"
          d="m -6.6418963,96.366997 v 5.591393 h 1.0490315 v 0.95084 h -2.8680419 v -0.95084 h 0.8888346 v -5.493208 h -0.8888346 v -0.89917 h 2.5941569 l 2.0205484,1.293229 2.0722249,-1.293229 h 2.52180979 v 0.89917 h -0.8991699 v 5.493208 h 0.8991699 v 0.95084 H -2.1305439 v -0.95084 h 0.8888346 v -5.503543 l -2.6251627,1.278462 h -0.2118733 z m -4.7852377,0.09819 v 5.493203 h 0.888835 v 0.95085 h -2.816366 v -0.95085 h 0.8785 v -5.493203 h -1.44694 v 1.948202 h -0.888835 v -2.847372 h 5.7257485 v 2.847372 h -0.8784993 v -1.948202 z m -5.172811,5.493203 v -1.40043 h 0.888835 v 2.35128 h -5.999634 v -0.95085 h 0.868164 v -5.493203 h -0.868164 v -0.89917 h 5.999634 v 2.180746 h -0.888835 v -1.281576 h -3.193603 v 2.232422 h 2.857707 v 0.878499 h -2.857707 v 2.382292 z"
@@ -156,7 +161,7 @@
        width="22.456511"
        height="0.39756343"
        x="0"
-       y="292.31448" />
+       y="292.15793" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:0;font-family:'GeoSlb712 Md BT';-inkscape-font-specification:'GeoSlb712 Md BT';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -189,10 +194,10 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="Tagline"
-     transform="translate(0,1.9150123)">
+     transform="translate(0,2.0720181)">
     <g
        aria-label="Est. 1985 Rowayton, CT"
-       transform="matrix(0.26458333,0,0,0.26458333,3.3767353e-8,-286.39775)"
+       transform="matrix(0.26458333,0,0,0.26458333,3.3767353e-8,-286.55469)"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:0;font-family:'GeoSlb712 Md BT';-inkscape-font-specification:'GeoSlb712 Md BT';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none"
        id="flowRoot1315">
       <path
@@ -206,27 +211,27 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Door"
-     transform="translate(0,1.9150123)">
+     transform="translate(0,2.0720181)">
     <rect
        style="fill:none;stroke:#ffffff;stroke-width:0.03499166;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect923"
        width="2.2255945"
        height="0.18743917"
        x="16.736244"
-       y="11.177884" />
+       y="11.020786" />
     <rect
        style="fill:none;stroke:#ffffff;stroke-width:0.033;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect931"
        width="1.6037889"
        height="2.6634285"
        x="17.04715"
-       y="8.5144415" />
+       y="8.3573427" />
     <use
        x="0"
        y="0"
        xlink:href="#rect931"
        id="use971"
-       transform="matrix(0.78315183,0,0,0.93549418,3.8705323,0.72232107)"
+       transform="matrix(0.78315183,0,0,0.93549418,3.8705323,0.7121876)"
        width="100%"
        height="100%"
        style="stroke-width:0.03504917;stroke-miterlimit:4;stroke-dasharray:none;fill:none;stroke:#ffffff;stroke-opacity:1" />
@@ -234,17 +239,17 @@
        style="fill:none;stroke:#ffffff;stroke-width:0.035;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path979"
        cx="18.287359"
-       cy="9.8974886"
+       cy="9.7403898"
        r="0.081851296" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Windows"
-     transform="translate(0,1.9150123)">
+     transform="translate(0,2.0720181)">
     <g
        id="g1269"
-       transform="translate(-8.9236208e-8,-285.4892)"
+       transform="translate(-8.9236208e-8,-285.64614)"
        style="fill:none;stroke:#ffffff;stroke-opacity:1">
       <rect
          y="291.82599"
@@ -307,7 +312,7 @@
        y="0"
        xlink:href="#g1269"
        id="use1271"
-       transform="translate(2.8410539,-3.5736207e-4)"
+       transform="translate(2.8410539,-3.5736542e-4)"
        width="100%"
        height="100%"
        style="fill:none;stroke:#ffffff;stroke-opacity:1" />
@@ -316,10 +321,10 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Roof"
-     transform="translate(0,1.9150123)">
+     transform="translate(0,2.0720181)">
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 22.45651,3.8119699 H 21.573877 L 11.244792,-1.2733592 0.87023115,3.8119699 H 3.5364304e-8 L 11.244792,-1.914657 Z"
+       d="M 22.45651,3.6548741 H 21.573877 L 11.244792,-1.430455 0.87023115,3.6548741 H 3.5364304e-8 L 11.244792,-2.0717528 Z"
        id="path1287"
        inkscape:connector-curvature="0" />
   </g>
