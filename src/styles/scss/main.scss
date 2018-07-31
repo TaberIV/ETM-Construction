@@ -168,6 +168,7 @@ footer {
 
     main {
       grid-area: main;
+      overflow-y: scroll;
     }
 
     footer {
@@ -176,7 +177,6 @@ footer {
 
     .site {
       display: grid;
-      min-height: fit-content;
       min-height: 650px;
       height: 100vh;
       grid-template-columns: auto 1fr;
