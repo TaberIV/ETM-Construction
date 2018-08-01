@@ -28,7 +28,7 @@ export default () => {
       <header>
         <NavLink className="logo" to="/">
           <svg>
-            <use href="/img/logoWhite.svg#logo" />
+            <use width="100%" height="100%" href="/img/logoWhite.svg#logo" />
           </svg>
         </NavLink>
         <nav>
