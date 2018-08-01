@@ -1,13 +1,18 @@
 header {
-  .logo img {
+  background-color: $sidebar-color;
+
+  .logo svg {
     display: block;
     margin: auto;
     padding: $logo-padding;
+
+    use {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   nav {
-    background-color: $sidebar-color;
-
     a {
       flex: 1;
 

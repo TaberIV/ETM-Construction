@@ -27,7 +27,9 @@ export default () => {
     <div className="site">
       <header>
         <NavLink className="logo" to="/">
-          <img src="/img/logo.svg" />
+          <svg>
+            <use href="/img/logoWhite.svg#logo" />
+          </svg>
         </NavLink>
         <nav>
           {pages.map(page => (
