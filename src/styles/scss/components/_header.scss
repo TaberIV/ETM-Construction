@@ -14,8 +14,6 @@ header {
 
   nav {
     a {
-      flex: 1;
-
       font-size: 1em;
       font-weight: bold;
       text-decoration: none;
@@ -35,6 +33,5 @@ header {
 
   .spacer {
     background-color: $sidebar-color;
-    height: 0px;
   }
 }
