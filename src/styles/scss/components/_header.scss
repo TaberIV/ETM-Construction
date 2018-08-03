@@ -1,15 +1,9 @@
 header {
   background-color: $sidebar-color;
-
   .logo svg {
     display: block;
     margin: auto;
     padding: $logo-padding;
-
-    use {
-      height: 100%;
-      width: 100%;
-    }
   }
 
   nav {
