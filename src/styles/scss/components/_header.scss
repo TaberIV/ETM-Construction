@@ -1,6 +1,7 @@
-header {
+.header {
   background-color: $sidebar-color;
-  .logo svg {
+
+  .logo__img {
     display: block;
     margin: auto;
     padding: $logo-padding;

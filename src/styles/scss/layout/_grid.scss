@@ -1,10 +1,10 @@
 @media screen and (min-width: 800px) {
-  header {
+  .header {
     grid-area: header;
     display: flex;
     flex-direction: column;
 
-    .logo svg {
+    .logo__img {
       height: $top-bar-height - 2 * $logo-padding;
     }
 

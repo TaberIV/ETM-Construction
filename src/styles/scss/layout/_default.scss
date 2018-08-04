@@ -1,19 +1,11 @@
-header {
-  .logo svg {
+.header {
+  .logo__img {
     height: 200px;
   }
 
   nav {
     display: flex;
     flex-direction: row;
-
-    a {
-      flex: 1;
-    }
-
-    .spacer {
-      height: 0px;
-    }
   }
 }
 

@@ -1,6 +1,6 @@
 // * Mobile
-header {
-  .logo svg {
+.header {
+  .logo__img {
     width: 300px;
   }
 
@@ -14,9 +14,6 @@ footer {
   align-items: center;
   .phone {
     order: -1;
-  }
-  .address {
-    order: 1;
   }
 }
 
@@ -33,7 +30,7 @@ footer {
 
 // * Mobile + Grid
 @supports (display: grid) {
-  header nav {
+  .header nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }

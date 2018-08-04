@@ -25,16 +25,17 @@ export default () => {
 
   return (
     <div className="site">
-      <header>
+      <header className="header">
         <NavLink className="logo" to="/">
-          <svg>
+          {/* <svg className="logo__img">
             <use
               id="logo"
               width="100%"
               height="100%"
               href="/img/logoWhite.svg#logo"
             />
-          </svg>
+          </svg> */}
+          <img className="logo__img" src="/img/logoWhite.svg" />
         </NavLink>
         <nav>
           {pages.map(page => (
