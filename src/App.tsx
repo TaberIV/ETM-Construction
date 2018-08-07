@@ -58,14 +58,16 @@ export default () => {
     <div className="site">
       <header className="header">
         <NavLink className="logo" to="/">
-          {/* <svg className="logo__img">
+          {/*
+          <svg className="logo__img">
             <use
               id="logo"
               width="100%"
               height="100%"
               href="/img/logoWhite.svg#logo"
             />
-          </svg> */}
+          </svg> 
+          */}
           <img className="logo__img" src="/img/logoWhite.svg" />
         </NavLink>
         <nav>
