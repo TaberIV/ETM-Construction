@@ -4,7 +4,7 @@ export default () => (
   <React.Fragment>
     <div className="mainImage">
       <img src={`/img/houses/ETM4.jpg`} />
-      <h1>Build A Lifestyle</h1>
+      <h1>Build a Lifestyle</h1>
     </div>
     <main>
       <p>

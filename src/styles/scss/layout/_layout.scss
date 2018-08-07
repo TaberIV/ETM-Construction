@@ -4,6 +4,8 @@
   @import "mobile";
 }
 
-@supports (display: grid) {
-  @import "grid";
+@media screen and (min-width: 800px) {
+  @supports (display: grid) {
+    @import "grid";
+  }
 }
