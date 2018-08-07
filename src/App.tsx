@@ -12,15 +12,46 @@ export default () => {
     component: React.StatelessComponent;
     name: string;
     path: string;
+    mainImage: string;
   }
 
   const pages: IPageInfo[] = [
-    { component: Home, name: "Home", path: "/" },
-    { component: AboutUs, name: "About Us", path: "/aboutUs" },
-    { component: WhatWeDo, name: "What We Do", path: "/whatWeDo" },
-    { component: Testimonials, name: "Testimonials", path: "/testimonials" },
-    { component: Photos, name: "Photos", path: "/photos" },
-    { component: Contact, name: "Contact", path: "/contact" }
+    {
+      component: Home,
+      name: "Home",
+      path: "/",
+      mainImage: "ETM4.jpg"
+    },
+    {
+      component: AboutUs,
+      name: "About Us",
+      path: "/aboutUs",
+      mainImage: "ETM4.jpg"
+    },
+    {
+      component: WhatWeDo,
+      name: "What We Do",
+      path: "/whatWeDo",
+      mainImage: "ETM4.jpg"
+    },
+    {
+      component: Testimonials,
+      name: "Testimonials",
+      path: "/testimonials",
+      mainImage: "ETM4.jpg"
+    },
+    {
+      component: Photos,
+      name: "Photos",
+      path: "/photos",
+      mainImage: "ETM4.jpg"
+    },
+    {
+      component: Contact,
+      name: "Contact",
+      path: "/contact",
+      mainImage: "ETM4.jpg"
+    }
   ];
 
   return (
@@ -51,12 +82,18 @@ export default () => {
         <div className="spacer" />
       </header>
       {pages.map(page => (
-        <Route
-          key={`${page.name}Route`}
-          exact={page.path === "/"}
-          path={page.path}
-          component={page.component}
-        />
+        <React.Fragment>
+          <div className="mainImage">
+            <img src={`/img/houses/${page.mainImage}`} />
+            <h1>Build A Lifestyle</h1>
+          </div>
+          <Route
+            key={`${page.name}Route`}
+            exact={page.path === "/"}
+            path={page.path}
+            component={page.component}
+          />
+        </React.Fragment>
       ))}
       <footer>
         <div className="LLC">ETM Construction LLC</div>
