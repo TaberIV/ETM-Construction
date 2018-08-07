@@ -17,5 +17,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    background-color: rgba($color: $sidebar-color, $alpha: 0.5);
+    padding: 0.1em;
+    border-radius: 0.1em;
   }
 }
