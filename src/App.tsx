@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Route } from "react-router-dom";
+import MainImage from "./components/MainImage";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -8,44 +9,54 @@ import Testimonials from "./pages/Testimonials";
 import WhatWeDo from "./pages/WhatWeDo";
 
 export default () => {
-  interface IPageInfo {
-    component: React.StatelessComponent;
-    name: string;
-    path: string;
-  }
-
   const pages: IPageInfo[] = [
     {
       component: Home,
       name: "Home",
-      path: "/"
+      path: "/",
+      imgSrc: "ETM4.jpg",
+      heading: "Build a Lifestyle"
     },
     {
       component: AboutUs,
       name: "About Us",
-      path: "/aboutUs"
+      path: "/aboutUs",
+      imgSrc: "ETM4.jpg",
+      heading: "Build a Lifestyle"
     },
     {
       component: WhatWeDo,
       name: "What We Do",
-      path: "/whatWeDo"
+      path: "/whatWeDo",
+      imgSrc: "ETM4.jpg",
+      heading: "Build a Lifestyle"
     },
     {
       component: Testimonials,
       name: "Testimonials",
-      path: "/testimonials"
+      path: "/testimonials",
+      imgSrc: "ETM4.jpg",
+      heading: "Build a Lifestyle"
     },
     {
       component: Photos,
       name: "Photos",
-      path: "/photos"
+      path: "/photos",
+      imgSrc: "ETM4.jpg",
+      heading: "Build a Lifestyle"
     },
     {
       component: Contact,
       name: "Contact",
-      path: "/contact"
+      path: "/contact",
+      imgSrc: "ETM4.jpg",
+      heading: "Build a Lifestyle"
     }
   ];
+
+  const pageRender = (page: IPageInfo) => () => (
+    <MainImage imgSrc={page.imgSrc} heading={page.heading} />
+  );
 
   return (
     <div className="site">
@@ -78,6 +89,12 @@ export default () => {
       </header>
       {pages.map(page => (
         <React.Fragment>
+          <Route
+            key={`${page.name}Route`}
+            exact={page.path === "/"}
+            path={page.path}
+            render={pageRender(page)}
+          />
           <Route
             key={`${page.name}Route`}
             exact={page.path === "/"}
