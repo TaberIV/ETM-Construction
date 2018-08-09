@@ -10,7 +10,6 @@ const renderPage = (page: IPageInfo) => (props: any) => (
 
 export default () => (
   <div className="site">
-    {/* Header */}
     <header className="header">
       <NavLink className="logo" to="/">
         <img className="logo__img" src="/img/logoWhite.svg" />
@@ -26,14 +25,13 @@ export default () => (
           </NavLink>
         ))}
       </nav>
-      <div className="spacer" />
     </header>
 
     {/* main */}
     {pageInfo.map(page => (
-      <React.Fragment>
+      <React.Fragment key={`${page.name}`}>
         <Route
-          key={`${page.name}Route`}
+          key={`${page.name}MainImage`}
           exact={page.path === "/"}
           path={page.path}
           render={renderPage(page)}
@@ -47,7 +45,6 @@ export default () => (
       </React.Fragment>
     ))}
 
-    {/* footer */}
     <footer>
       <div className="LLC">ETM Construction LLC</div>
       <div className="address">11 Steepletop Road Rowayton, CT 06853</div>
