@@ -1,10 +1,10 @@
 @import "default";
 
-@media screen and (max-width: 800px) {
+@media not screen and (min-width: $desktop-min-width) {
   @import "mobile";
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: $desktop-min-width) {
   @supports (display: grid) {
     @import "grid";
   }
