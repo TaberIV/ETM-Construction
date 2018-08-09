@@ -3,5 +3,6 @@ export default interface IPageInfo {
   name: string;
   path: string;
   imgSrc: string;
+  imgPos?: [number, number];
   heading?: string;
 }

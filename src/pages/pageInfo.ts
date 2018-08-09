@@ -14,6 +14,7 @@ export default [
     name: "Home",
     path: "/",
     imgSrc: "timmy/ETM4.jpg",
+    imgPos: [50, 65],
     heading: "Build a Lifestyle"
   },
   {
