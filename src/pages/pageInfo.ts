@@ -39,7 +39,8 @@ export default [
     component: Photos,
     name: "Photos",
     path: "/photos",
-    imgSrc: "timmy/ETM18.jpg"
+    imgSrc: "timmy/ETM11.jpg",
+    imgPos: [50, 55]
   },
   {
     component: Contact,
