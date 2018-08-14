@@ -1,16 +1,20 @@
 import React from "react";
 import IPageInfo from "../types/IPageInfo";
 
-export default (props: { page: IPageInfo }) => {
+export default ({ page }: { page: IPageInfo }) => {
+  if (page.mainImg === undefined) {
+    return null;
+  }
+
   const imgStyle =
-    props.page.imgPos !== undefined
-      ? { objectPosition: `${props.page.imgPos[0]}% ${props.page.imgPos[1]}%` }
+    page.mainImg.pos !== undefined
+      ? { objectPosition: `${page.mainImg.pos[0]}% ${page.mainImg.pos[1]}%` }
       : {};
 
   return (
     <div className="mainImage">
-      <img src={`/img/houses/${props.page.imgSrc}`} style={imgStyle} />
-      <h1>{props.page.heading || props.page.name}</h1>
+      <img src={`/img/houses/${page.mainImg.src}`} style={imgStyle} />
+      <h1>{page.mainImg.heading || page.name}</h1>
     </div>
   );
 };
