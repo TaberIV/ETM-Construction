@@ -4,9 +4,9 @@ import MainImage from "./components/MainImage";
 import pageInfo from "./pages/pageInfo";
 import IPageInfo from "./types/IPageInfo";
 
-const renderPage = (page: IPageInfo) => (props: any) => (
-  <MainImage {...props} page={page} />
-);
+const renderPage = (page: IPageInfo) => (props: any) => {
+  return <MainImage {...props} {...page.mainImg} />;
+};
 
 export default () => (
   <div className="site">

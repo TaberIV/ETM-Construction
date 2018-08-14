@@ -1,20 +1,22 @@
 import React from "react";
-import IPageInfo from "../types/IPageInfo";
+import { IImageInfo } from "../types/IPageInfo";
 
-export default ({ page }: { page: IPageInfo }) => {
-  if (page.mainImg === undefined) {
+export default (props: IImageInfo) => {
+  // tslint:disable-next-line:no-console
+  console.log(props);
+  if (props === undefined) {
     return null;
   }
 
   const imgStyle =
-    page.mainImg.pos !== undefined
-      ? { objectPosition: `${page.mainImg.pos[0]}% ${page.mainImg.pos[1]}%` }
+    props.pos !== undefined
+      ? { objectPosition: `${props.pos[0]}% ${props.pos[1]}%` }
       : {};
 
   return (
     <div className="mainImage">
-      <img src={`/img/houses/${page.mainImg.src}`} style={imgStyle} />
-      <h1>{page.mainImg.heading || page.name}</h1>
+      <img src={`/img/houses/${props.src}`} style={imgStyle} />
+      {props.heading && <h1>{props.heading}</h1>}
     </div>
   );
 };

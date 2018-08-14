@@ -1,6 +1,6 @@
 // Types
-import IPageInfo from "../types/IPageInfo";
 // Pages
+import IPageInfo from "../types/IPageInfo";
 import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import Home from "./Home";
@@ -8,7 +8,7 @@ import Photos from "./Photos";
 import Testimonials from "./Testimonials";
 import WhatWeDo from "./WhatWeDo";
 
-export default [
+const pages = [
   {
     component: Home,
     name: "Home",
@@ -57,3 +57,11 @@ export default [
     }
   }
 ] as IPageInfo[];
+
+pages.forEach(page => {
+  if (page.mainImg && !page.mainImg.heading) {
+    page.mainImg.heading = page.name;
+  }
+});
+
+export default pages;
