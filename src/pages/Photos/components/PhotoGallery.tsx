@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import IPhotoInfo from "../types/PhotoInfo";
-import Photo from "./Photo";
+import PhotoThumbnail from "./PhotoThumbnail";
 
 interface IPhotoGalleryProps {
   photos: IPhotoInfo[];
@@ -15,9 +15,9 @@ export default class PhotoGallery extends Component<IPhotoGalleryProps> {
     const { photos } = this.props;
 
     return (
-      <main>
+      <main className="photos">
         {photos.map(photo => (
-          <Photo photo={photo} />
+          <PhotoThumbnail photo={photo} />
         ))}
       </main>
     );
