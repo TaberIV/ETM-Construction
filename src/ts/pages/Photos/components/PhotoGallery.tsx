@@ -17,7 +17,7 @@ export default class PhotoGallery extends Component<IPhotoGalleryProps> {
     return (
       <main className="photos">
         {photos.map(photo => (
-          <PhotoThumbnail photo={photo} />
+          <PhotoThumbnail key={photo.name} photo={photo} />
         ))}
       </main>
     );
