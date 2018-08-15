@@ -1,25 +1,48 @@
 import React, { Component } from "react";
-import IPhotoInfo from "../types/PhotoInfo";
+import MainImage from "../../../components/MainImage";
+import { IImageInfo } from "../../../types/IPageInfo";
 import PhotoThumbnail from "./PhotoThumbnail";
 
 interface IPhotoGalleryProps {
-  photos: IPhotoInfo[];
+  photos: IImageInfo[];
 }
 
-export default class PhotoGallery extends Component<IPhotoGalleryProps> {
+interface IPhotoGalleryState {
+  selectedPhoto: IImageInfo;
+}
+
+export default class PhotoGallery extends Component<
+  IPhotoGalleryProps,
+  IPhotoGalleryState
+> {
   constructor(props: IPhotoGalleryProps) {
     super(props);
+
+    this.state = { selectedPhoto: props.photos[0] };
   }
+
+  public handleClick = (photo: IImageInfo) => () => {
+    this.setState({ selectedPhoto: photo });
+  };
 
   public render() {
     const { photos } = this.props;
+    const imgSrc = this.state.selectedPhoto.src;
 
     return (
-      <main className="photos">
-        {photos.map(photo => (
-          <PhotoThumbnail key={photo.name} photo={photo} />
-        ))}
-      </main>
+      <React.Fragment>
+        <MainImage src={imgSrc} />
+
+        <main className="photos">
+          {photos.map(photo => (
+            <PhotoThumbnail
+              key={photo.heading}
+              photo={photo}
+              handleClick={this.handleClick}
+            />
+          ))}
+        </main>
+      </React.Fragment>
     );
   }
 }

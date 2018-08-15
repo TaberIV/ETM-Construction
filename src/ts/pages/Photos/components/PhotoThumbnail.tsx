@@ -1,6 +1,15 @@
 import React from "react";
-import IPhotoInfo from "../types/PhotoInfo";
+import { IImageInfo } from "../../../types/IPageInfo";
 
-export default ({ photo }: { photo: IPhotoInfo }) => (
-  <img src={photo.src} alt={photo.name} />
+interface IThumbnailProps {
+  photo: IImageInfo;
+  handleClick: (photo: IImageInfo) => () => void;
+}
+
+export default ({ photo, handleClick }: IThumbnailProps) => (
+  <img
+    src={`img/houses/${photo.src}`}
+    alt={photo.heading}
+    onClick={handleClick(photo)}
+  />
 );

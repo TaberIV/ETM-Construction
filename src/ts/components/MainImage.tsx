@@ -2,9 +2,7 @@ import React from "react";
 import { IImageInfo } from "../types/IPageInfo";
 
 export default (props: IImageInfo) => {
-  // tslint:disable-next-line:no-console
-  console.log(props);
-  if (props === undefined) {
+  if (props === undefined || props.src === undefined) {
     return null;
   }
 
