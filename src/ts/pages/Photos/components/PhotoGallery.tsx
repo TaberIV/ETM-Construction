@@ -33,7 +33,7 @@ export default class PhotoGallery extends Component<
       <React.Fragment>
         <MainImage src={imgSrc} />
 
-        <main className="photos">
+        <main className="photoGallery">
           {photos.map(photo => (
             <PhotoThumbnail
               key={photo.heading}

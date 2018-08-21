@@ -1,34 +1,44 @@
+$photo-gallery-height: 250px;
+
 $thumbnail-min-width: 200px;
+$thumbnail-height: 100px;
 
-main img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
+main.photoGallery {
+  padding: 0em;
 
-  transition: 0.5s ease;
+  max-height: $photo-gallery-height;
+  overflow-y: auto;
 
-  &:hover {
-    opacity: 0.85;
+  img {
+    height: $thumbnail-height;
+    width: $thumbnail-min-width;
+    object-fit: cover;
+
+    transition: 0.5s ease;
+
+    &:hover {
+      opacity: 0.85;
+    }
   }
 }
 
 @supports (display: grid) {
-  .site {
-    grid-template-rows: minmax(minmax(30vw, 1fr), 60vh) auto max-content;
-  }
-
-  main.photos {
+  main.photoGallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax($thumbnail-min-width, 1fr));
 
-    overflow-y: auto;
-
-    padding: 0em;
-
     img {
-      height: 100px;
+      height: $thumbnail-height;
       width: 100%;
       object-fit: cover;
+    }
+  }
+}
+
+@media not screen and (min-width: 800px) {
+  @supports (display: grid) {
+    main.photoGallery {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
