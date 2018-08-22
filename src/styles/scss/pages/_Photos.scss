@@ -1,29 +1,40 @@
-$photo-gallery-height: 250px;
+$photo-gallery-height: 150px;
 
 $thumbnail-min-width: 200px;
 $thumbnail-height: 100px;
 
-main.photoGallery {
-  padding: 0em;
+main.photos {
+  padding: 0;
 
-  max-height: $photo-gallery-height;
-  overflow-y: auto;
+  .photoToggle {
+    background: $sidebar-color;
+    color: $background-color;
 
-  img {
-    height: $thumbnail-height;
-    width: $thumbnail-min-width;
-    object-fit: cover;
+    text-align: center;
 
-    transition: 0.5s ease;
+    padding: 10px;
+  }
 
-    &:hover {
-      opacity: 0.85;
+  .photoGallery {
+    max-height: $photo-gallery-height;
+    overflow-y: auto;
+
+    img {
+      height: $thumbnail-height;
+      min-width: $thumbnail-min-width;
+      object-fit: cover;
+
+      transition: 0.5s ease;
+
+      &:hover {
+        opacity: 0.85;
+      }
     }
   }
 }
 
 @supports (display: grid) {
-  main.photoGallery {
+  .photoGallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax($thumbnail-min-width, 1fr));
 
@@ -37,8 +48,16 @@ main.photoGallery {
 
 @media not screen and (min-width: 800px) {
   @supports (display: grid) {
-    main.photoGallery {
-      grid-template-columns: repeat(2, 1fr);
+    main.photos {
+      button {
+        display: none;
+      }
+
+      .photoGallery {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        max-height: $photo-gallery-height * 2;
+      }
     }
   }
 }

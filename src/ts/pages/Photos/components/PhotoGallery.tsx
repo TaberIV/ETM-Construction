@@ -9,6 +9,7 @@ interface IPhotoGalleryProps {
 
 interface IPhotoGalleryState {
   selectedPhoto: IImageInfo;
+  hidden: boolean;
 }
 
 export default class PhotoGallery extends Component<
@@ -18,29 +19,43 @@ export default class PhotoGallery extends Component<
   constructor(props: IPhotoGalleryProps) {
     super(props);
 
-    this.state = { selectedPhoto: props.photos[0] };
+    this.state = {
+      selectedPhoto: props.photos[0],
+      hidden: false
+    };
   }
 
   public handleClick = (photo: IImageInfo) => () => {
     this.setState({ selectedPhoto: photo });
   };
 
+  public toggleHidden = () => {
+    this.setState(prevState => ({ hidden: !prevState.hidden }));
+  };
+
   public render() {
     const { photos } = this.props;
-    const imgSrc = this.state.selectedPhoto.src;
+    const { heading, ...mainImageProps } = this.state.selectedPhoto;
+    const { hidden } = this.state;
 
     return (
       <React.Fragment>
-        <MainImage src={imgSrc} />
+        <MainImage {...mainImageProps} />
 
-        <main className="photoGallery">
-          {photos.map(photo => (
-            <PhotoThumbnail
-              key={photo.heading}
-              photo={photo}
-              handleClick={this.handleClick}
-            />
-          ))}
+        <main className="photos">
+          <div className="photoGallery">
+            {/* <div className="photoToggle" onClick={this.toggleHidden}>
+              {hidden ? "Show" : "Hide"}
+            </div> */}
+            {hidden ||
+              photos.map(photo => (
+                <PhotoThumbnail
+                  key={photo.heading}
+                  photo={photo}
+                  handleClick={this.handleClick}
+                />
+              ))}
+          </div>
         </main>
       </React.Fragment>
     );
