@@ -47,7 +47,7 @@ export default () => (
 
     <footer>
       <div className="LLC">ETM Construction LLC</div>
-      <div className="address">11 Steepletop Road Rowayton, CT 06853</div>
+      <div className="address">etmrowayton@gmail.com</div>
       <div className="phone">(203) 838-7727</div>
     </footer>
   </div>
