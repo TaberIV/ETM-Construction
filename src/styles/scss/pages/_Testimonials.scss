@@ -1,5 +1,7 @@
 main.testimonials {
-  max-height: 500px;
+  .testimonial__img {
+    display: none;
+  }
 
   @supports (display: grid) {
     .testimonial {
@@ -19,6 +21,7 @@ main.testimonials {
       }
 
       .testimonial__img {
+        display: unset;
         grid-area: img;
         width: 100%;
         height: auto;
