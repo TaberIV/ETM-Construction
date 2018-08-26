@@ -30,12 +30,14 @@ export default () => (
     {/* main */}
     {pageInfo.map(page => (
       <React.Fragment key={`${page.name}`}>
-        <Route
-          key={`${page.name}MainImage`}
-          exact={page.path === "/"}
-          path={page.path}
-          render={renderPage(page)}
-        />
+        {page.mainImg && (
+          <Route
+            key={`${page.name}MainImage`}
+            exact={page.path === "/"}
+            path={page.path}
+            render={renderPage(page)}
+          />
+        )}
         <Route
           key={`${page.name}Route`}
           exact={page.path === "/"}

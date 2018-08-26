@@ -37,11 +37,7 @@ const pages = [
   {
     component: Testimonials,
     name: "Testimonials",
-    path: "/testimonials",
-    mainImg: {
-      src: "timmy/ETM2.jpg",
-      pos: [50, 45]
-    }
+    path: "/testimonials"
   },
   {
     component: Photos,
