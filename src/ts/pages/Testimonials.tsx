@@ -57,7 +57,8 @@ const testimonials: ITestimonial[] = [
       project's stumbling blocks. His friendly personality, along with those of\
       his crew and subcontractors, allowed for an open and collaborative working\
       relationship and I would highly recommend ETM Construction to anyone\
-      building or renovating their home."
+      building or renovating their home.",
+    imgSrc: "kelly/001-Front_View-5688603-large.jpg"
   }
 ];
 
@@ -68,8 +69,12 @@ export default () => (
         <header className="testimonial__header">
           <h2>{test.client}</h2>
         </header>
+
         <p className="testimonial__body">{test.body}</p>
-        {test.imgSrc && <img className="testimonial__img" src={test.imgSrc} />}
+
+        {test.imgSrc && (
+          <img className="testimonial__img" src={`img/houses/${test.imgSrc}`} />
+        )}
       </article>
     ))}
   </main>

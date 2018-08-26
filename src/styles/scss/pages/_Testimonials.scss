@@ -1,9 +1,28 @@
 main.testimonials {
   max-height: 500px;
 
-  .testimonial__header {
-  }
+  @supports (display: grid) {
+    .testimonial {
+      display: grid;
+      grid-template-areas:
+        "header img"
+        "body   img";
 
-  .testimonial__body {
+      width: 100%;
+
+      .testimonial__header {
+        grid-area: header;
+      }
+
+      .testimonial__body {
+        grid-area: body;
+      }
+
+      .testimonial__img {
+        grid-area: img;
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }
