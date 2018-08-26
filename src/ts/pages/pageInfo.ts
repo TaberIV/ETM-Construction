@@ -2,7 +2,6 @@
 // Pages
 import IPageInfo from "../types/IPageInfo";
 import AboutUs from "./AboutUs";
-import Contact from "./Contact";
 import Home from "./Home";
 import Photos from "./Photos";
 import Testimonials from "./Testimonials";
@@ -32,7 +31,7 @@ const pages = [
     name: "What We Do",
     path: "/whatWeDo",
     mainImg: {
-      src: "timmy/ETM2.jpg"
+      src: "timmy/ETM19.jpg"
     }
   },
   {
@@ -40,21 +39,14 @@ const pages = [
     name: "Testimonials",
     path: "/testimonials",
     mainImg: {
-      src: "timmy/ETM19.jpg"
+      src: "timmy/ETM2.jpg",
+      pos: [50, 45]
     }
   },
   {
     component: Photos,
     name: "Photos",
     path: "/photos"
-  },
-  {
-    component: Contact,
-    name: "Contact",
-    path: "/contact",
-    mainImg: {
-      src: "timmy/ETM7.jpg"
-    }
   }
 ] as IPageInfo[];
 

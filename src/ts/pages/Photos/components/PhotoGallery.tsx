@@ -43,10 +43,10 @@ export default class PhotoGallery extends Component<
         <MainImage {...mainImageProps} />
 
         <main className="photos">
+          <div className="photoToggle" onClick={this.toggleHidden}>
+            {hidden ? "Show" : "Hide"}
+          </div>
           <div className="photoGallery">
-            {/* <div className="photoToggle" onClick={this.toggleHidden}>
-              {hidden ? "Show" : "Hide"}
-            </div> */}
             {hidden ||
               photos.map(photo => (
                 <PhotoThumbnail
