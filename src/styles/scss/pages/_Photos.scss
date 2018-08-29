@@ -49,7 +49,7 @@ main.photos {
 @media not screen and (min-width: 800px) {
   @supports (display: grid) {
     main.photos {
-      button {
+      .photoToggle {
         display: none;
       }
 
