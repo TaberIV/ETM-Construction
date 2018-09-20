@@ -1,6 +1,6 @@
 # ETM Construction
 
-Website of my father's business (soon to be) hosted at [etmconstruction.com](http://www.etmconstruction.com/)
+Website of my father's business hosted at [etmconstruction.com](http://www.etmconstruction.com/)
 
 ## Technical details
 
