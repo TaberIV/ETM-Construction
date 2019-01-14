@@ -7,11 +7,11 @@
 /coverage
 
 # production
-/build
-/src/styles/css
+**/build
+client/src/styles/css
 
 # images
-/public/img/houses
+client/public/img/houses
 
 # misc
 .DS_Store
