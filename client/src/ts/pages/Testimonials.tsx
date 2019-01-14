@@ -18,7 +18,7 @@ const testimonials: ITestimonial[] = [
       "You have the peace of mind that not only are they honest and fair \
       professionals, but that the subs who they hire are of the highest\
       quality and integrity.",
-    img: { src: "kelly/001-Front_View-5688603-large.jpg" }
+    img: { src: "sanders/Sanders_Baudouin ext 07s 2.jpg" }
   },
   {
     key: "Hurwitt",
@@ -28,7 +28,7 @@ const testimonials: ITestimonial[] = [
       finest builders of quality, craftsmanship, and detail. Always\
       professional, always pleasant, often humorous and a delight to work\
       with. We love the finished product.",
-    img: { src: "kelly/001-Front_View-5688603-large.jpg" }
+    img: { src: "timmy/ETM2.jpg" }
   },
   {
     key: "Baruth",
@@ -54,7 +54,7 @@ const testimonials: ITestimonial[] = [
       the highest quality craftsmanship. Wendy and I are happy to have you use\
       us as references and for anyone who wants to see our home to do so. We\
       are thrilled about the project.",
-    img: { src: "kelly/001-Front_View-5688603-large.jpg" }
+    img: { src: "timmy/ETM3.jpg" }
   },
   {
     key: "Kelly",
