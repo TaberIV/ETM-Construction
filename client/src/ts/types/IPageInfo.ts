@@ -6,7 +6,7 @@ export interface IImageInfo {
 }
 
 export default interface IPageInfo {
-  component: React.StatelessComponent;
+  component: React.ReactElement;
   name: string;
   path: string;
   mainImg?: IImageInfo;

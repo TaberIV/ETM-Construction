@@ -9,44 +9,44 @@ import WhatWeDo from "./WhatWeDo";
 
 const pages = [
   {
-    component: Home,
+    component: Home(),
     name: "Home",
     path: "/",
     mainImg: {
       src: "timmy/ETM4.jpg",
       heading: "Build a Lifestyle",
-      pos: [50, 65]
-    }
+      pos: [50, 65],
+    },
   },
   {
-    component: AboutUs,
+    component: AboutUs(),
     name: "About Us",
     path: "/aboutUs",
     mainImg: {
-      src: "timmy/ETM5.jpg"
-    }
+      src: "timmy/ETM5.jpg",
+    },
   },
   {
-    component: WhatWeDo,
+    component: WhatWeDo(),
     name: "What We Do",
     path: "/whatWeDo",
     mainImg: {
-      src: "timmy/ETM19.jpg"
-    }
+      src: "timmy/ETM19.jpg",
+    },
   },
   {
-    component: Testimonials,
+    component: Testimonials(),
     name: "Testimonials",
-    path: "/testimonials"
+    path: "/testimonials",
   },
   {
-    component: Photos,
+    component: Photos(),
     name: "Photos",
-    path: "/photos"
-  }
+    path: "/photos",
+  },
 ] as IPageInfo[];
 
-pages.forEach(page => {
+pages.forEach((page) => {
   if (page.mainImg && !page.mainImg.heading) {
     page.mainImg.heading = page.name;
   }

@@ -1,6 +1,14 @@
 main.testimonials {
   padding: 0em;
 
+  .testimonials__body {
+    margin: 1em;
+    text-align: left;
+    // font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+
   nav {
     display: flex;
     flex-wrap: wrap;
@@ -9,12 +17,13 @@ main.testimonials {
 
     a {
       flex: 1;
+      flex-basis: 15%;
+      padding: 1em 2.5%;
 
       font-size: 1em;
       font-weight: bold;
       text-decoration: none;
       text-align: center;
-      padding: 1em;
 
       color: $background-color;
 

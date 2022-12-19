@@ -2,12 +2,6 @@ import React from "react";
 import { NavLink, Route } from "react-router-dom";
 import MainImage from "./components/MainImage";
 import pageInfo from "./pages/pageInfo";
-import IPageInfo from "./types/IPageInfo";
-
-const renderPage = (page: IPageInfo) => (props: any) => {
-  return <MainImage {...props} {...page.mainImg} />;
-};
-
 export default () => (
   <div className="site">
     <header className="header">
@@ -18,7 +12,7 @@ export default () => (
         {pageInfo.map(page => (
           <NavLink
             key={`${page.name}NavLink`}
-            exact={page.path === "/"}
+            end={page.path === "/"}
             to={page.path}
           >
             {page.name}
@@ -33,16 +27,14 @@ export default () => (
         {page.mainImg && (
           <Route
             key={`${page.name}MainImage`}
-            exact={page.path === "/"}
             path={page.path}
-            render={renderPage(page)}
+            element={<MainImage {...page.mainImg} />}
           />
         )}
         <Route
           key={`${page.name}Route`}
-          exact={page.path === "/"}
           path={page.path}
-          component={page.component}
+          element={page.component}
         />
       </React.Fragment>
     ))}
