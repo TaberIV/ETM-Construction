@@ -1,0 +1,1 @@
+sass --watch client/src/styles/scss/main.css client/public/css/style.css 
