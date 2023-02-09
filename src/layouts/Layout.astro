@@ -1,0 +1,53 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Rokkitt"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+    <title>ETM Construction</title>
+  </head>
+
+  <div id="root">
+    <div class="site">
+      <header class="header">
+        <a class="logo active" aria-current="page" href="/">
+          <img class="logo__img" src="img/logoWhite.svg" />
+        </a>
+        <nav>
+          <a href="" class.html="active" aria-current="page">Home</a>
+          <a href="aboutUs">About Us</a>
+          <a href="whatWeDo">What We Do</a>
+          <a href="testimonials">Testimonials</a>
+          <a href="photos">Photos</a>
+        </nav>
+      </header>
+
+      <slot />
+
+      <footer>
+        <div class="LLC">ETM Construction LLC</div>
+        <div class="address">etmrowayton@gmail.com</div>
+        <div class="phone">(203) 838-7727</div>
+      </footer>
+    </div>
+  </div>
+
+
+</html>

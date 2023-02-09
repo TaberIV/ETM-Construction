@@ -1,0 +1,28 @@
+{
+  "name": "etm-construction",
+  "version": "2.0.0",
+  "description": "Website of ETM Construction, hosted at [etmconstruction.com](http://www.etmconstruction.com/)",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaberIV/ETM-Construction.git"
+  },
+  "author": "Taber McFarlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TaberIV/ETM-Construction/issues"
+  },
+  "homepage": "https://github.com/TaberIV/ETM-Construction#readme",
+  "dependencies": {
+    "astro": "^2.0.9"
+  },
+  "devDependencies": {
+    "sass": "^1.58.0"
+  }
+}
