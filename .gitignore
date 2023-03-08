@@ -9,10 +9,11 @@
 # production
 **/build
 *.zip
-client/src/styles/css
+src/styles/css
 
 # images
-client/public/img/houses
+public/img/houses
+public/img/thumbs
 
 # misc
 .DS_Store

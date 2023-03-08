@@ -6,6 +6,9 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.split("/")[1];
 ---
 
 <!DOCTYPE html>
@@ -29,14 +32,28 @@ const { title } = Astro.props;
     <div class="site">
       <header class="header">
         <a class="logo" href="/">
-          <img class="logo__img" src="img/logoWhite.svg" />
+          <img class="logo__img" src="/img/logoWhite.svg" />
         </a>
         <nav>
-          <a href="/">Home</a>
-          <a href="aboutUs">About Us</a>
-          <a href="whatWeDo">What We Do</a>
-          <a href="testimonials">Testimonials</a>
-          <a href="photos">Photos</a>
+          <a class={currentPath === "" ? "active" : ""} href="/">Home</a>
+          <a class={currentPath === "aboutUs" ? "active" : ""} href="/aboutUs">
+            About Us
+          </a>
+          <a
+            class={currentPath === "whatWeDo" ? "active" : ""}
+            href="/whatWeDo"
+          >
+            What We Do
+          </a>
+          <a
+            class={currentPath === "testimonials" ? "active" : ""}
+            href="/testimonials/klein"
+          >
+            Testimonials
+          </a>
+          <a class={currentPath === "photos" ? "active" : ""} href="/photos">
+            Photos
+          </a>
         </nav>
       </header>
 
@@ -44,7 +61,9 @@ const { title } = Astro.props;
 
       <footer>
         <div class="LLC">ETM Construction LLC</div>
-        <div class="address">etmrowayton@gmail.com</div>
+        <a href="mailto:email@example.com" target="_blank">
+          <div class="address" style="color: white">etmrowayton@gmail.com</div>
+        </a>
         <div class="phone">(203) 838-7727</div>
       </footer>
     </div>
